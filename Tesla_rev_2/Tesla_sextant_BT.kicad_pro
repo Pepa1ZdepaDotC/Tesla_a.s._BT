@@ -440,6 +440,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -775,24 +776,16 @@
       "Root"
     ],
     [
-      "a7ca233d-285c-4041-bf41-080bb0494d4b",
-      "USB"
-    ],
-    [
-      "520a6cf8-b251-479e-a11c-9cdde42a23eb",
-      "IO_PANEL"
-    ],
-    [
       "f0da1f80-f137-4b99-a8bf-d6d1bfec4fb0",
       "DAC_AMP"
     ],
     [
-      "a5ab32e0-e787-467b-9778-05422488ccf7",
-      "POWER"
+      "5bb2c093-34f7-4387-ae88-1a6d52253650",
+      "freq_converter"
     ],
     [
-      "9ff7eca1-18ea-42ec-8229-18347a2ef5b0",
-      "MCU"
+      "a5ab32e0-e787-467b-9778-05422488ccf7",
+      "POWER+USB"
     ]
   ],
   "text_variables": {}
