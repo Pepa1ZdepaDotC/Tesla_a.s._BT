@@ -1,0 +1,12 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"C1, C2, C3, C7",0805,4,470nF,
+"C4, C5, C6",0805,3,100nF,
+J2,PinSocket_1x05_P2.54mm_Vertical,1,Conn_01x05,
+Q1,SOT-23,1,BC817,
+R1,0805,1,0R,
+R2,0805,1,1K,
+"R3, R4, R5, R6",0805,4,10K,
+"SW1, SW2, SW3, SW4",SW_PUSH-12mm_Wuerth-430476085716,4,SW_Push,
+"TP1, TP2",TestPoint_Pad_D3.0mm,2,TestPoint,
+U1,NHD-C0220BiZ,1,NHD-C0220BIZ,
+U2,SOIC-18W_7.5x11.6mm_P1.27mm,1,MCP23008-xSO,

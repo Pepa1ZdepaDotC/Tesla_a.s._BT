@@ -1,4 +1,4 @@
-26732863638689979
+26727555948358390
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -103942,27 +103942,6 @@ screw terminal thread redcube thr power connector
 0
 18
 1
-Tesla_Library
-AD831
-
-
-0
-20
-20
-Tesla_Library
-Conn_Solder_1x02_SMD
-
-
-0
-2
-2
-Tesla_Library
-Conn_Solder_1x03_SMD
-
-
-0
-0
-0
 TestPoint
 TestPoint_2Pads_Pitch2.54mm_Drill0.8mm
 Test point with 2 pins, pitch 2.54mm, drill diameter 0.8mm

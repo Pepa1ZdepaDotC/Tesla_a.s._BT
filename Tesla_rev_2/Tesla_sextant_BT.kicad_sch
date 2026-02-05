@@ -6,10 +6,119 @@
 	(paper "A4")
 	(title_block
 		(title "Tesla sextant BT")
-		(date "2025-11-30")
-		(rev "2.1")
+		(date "2026-02-05")
+		(rev "2.3")
+		(comment 1 "Caps MLCC 50V dielectric X7R / X5R unless noted otherwise")
+		(comment 2 "Resistors 1% 125mW 150V unless noted otherwise")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
 				(offset 1.016)
@@ -371,264 +480,6 @@
 						)
 					)
 					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Connector_Generic:Conn_01x06"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x06"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x06_1_1"
-				(rectangle
-					(start -1.27 6.35)
-					(end 1.27 -8.89)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 5.207)
-					(end 0 4.953)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -7.493)
-					(end 0 -7.747)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 5.08 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 3.81)
-					(name "Pin_5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -7.62 0)
-					(length 3.81)
-					(name "Pin_6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1513,7 +1364,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RF_Module:ESP32-C3-WROOM-02U"
+		(symbol "RF_Module:ESP32-C3-WROOM-02"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1525,16 +1376,16 @@
 					)
 				)
 			)
-			(property "Value" "ESP32-C3-WROOM-02U"
-				(at 12.7 21.336 0)
+			(property "Value" "ESP32-C3-WROOM-02"
+				(at 12.192 21.336 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "RF_Module:ESP32-C3-WROOM-02U"
-				(at 0 -0.635 0)
+			(property "Footprint" "RF_Module:ESP32-C3-WROOM-02"
+				(at 0 0.635 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1543,7 +1394,7 @@
 				)
 			)
 			(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf"
-				(at 0 -0.635 0)
+				(at 0 0.635 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1552,7 +1403,7 @@
 				)
 			)
 			(property "Description" "802.11 b/g/n Wi­Fi and Bluetooth 5 module, ESP32­C3 SoC, RISC­V microprocessor, On-board antenna"
-				(at 0 -0.635 0)
+				(at 0 0.635 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1569,7 +1420,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "ESP32?C3*WROOM?02U*"
+			(property "ki_fp_filters" "ESP32?C3*WROOM?02*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1578,7 +1429,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "ESP32-C3-WROOM-02U_1_1"
+			(symbol "ESP32-C3-WROOM-02_1_1"
 				(rectangle
 					(start -12.7 20.32)
 					(end 12.7 -20.32)
@@ -1936,156 +1787,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Push button switch, generic, two pins"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -2325,41 +2026,6 @@
 		)
 		(uuid "00650e56-ca46-4bb2-89a2-ea3d2fbd7490")
 	)
-	(text "CLC filter? \n\nBuck conv.\n\nESP32-C3/S3\n\nDAC\n\nFront IO\n\nFM tuner? - audio out\nActive frequency mixer"
-		(exclude_from_sim no)
-		(at 41.275 -73.66 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.9144)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "027c3d1f-f20f-4605-bc79-f0993c01923e")
-	)
-	(text "Misc:\n* Schematic setup - hieary\n* 2 PCB 1 Project\n* PCB setup? 4L SGGS\n* PCB routing\n* TVS all J\n*\n"
-		(exclude_from_sim no)
-		(at 41.91 -26.035 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "07e623fd-7d53-4471-94a6-8e429d455054")
-	)
-	(text "Dual-gate GaAs-FET\nJFET caps mix\npassive 2T\nGilbert cell - active mix"
-		(exclude_from_sim no)
-		(at 93.345 -42.545 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "15ca1de9-94cb-4a85-ac82-293f716382b2")
-	)
 	(text "Radio sound output (Line)"
 		(exclude_from_sim no)
 		(at 199.39 118.11 0)
@@ -2371,38 +2037,6 @@
 			)
 		)
 		(uuid "1bcebf19-9096-42fd-a865-1d8540028987")
-	)
-	(text "FALSTAD, 1 docx"
-		(exclude_from_sim no)
-		(at 77.47 -45.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "3a93f112-0689-42ed-9c9f-265763bc8cda")
-	)
-	(text "15V? 5V?"
-		(exclude_from_sim no)
-		(at 42.545 -85.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "54b02b03-475a-46f5-bf52-fe6876037a0a")
-	)
-	(text "Signal path, buffer, AMP?"
-		(exclude_from_sim no)
-		(at 42.545 -68.58 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "67c8d53a-124e-488e-baec-f39c48e8d07e")
 	)
 	(text "Front pannel conn"
 		(exclude_from_sim no)
@@ -2416,71 +2050,29 @@
 		)
 		(uuid "8349d528-147a-4563-8a8c-85a513905db9")
 	)
-	(text "https://eu.mouser.com/c/passive-components/frequency-control-timing-devices/oscillators/vco-oscillators/?frequency=1.1%20MHz%20to%2025%20MHz%7C~25%20MHz%20to%2085%20MHz"
-		(exclude_from_sim no)
-		(at 77.47 -47.625 0)
-		(effects
-			(font
-				(size 0.127 0.127)
-			)
-		)
-		(uuid "a872aac7-501d-4fbc-9a6f-380b728c8cb9")
+	(junction
+		(at 201.295 67.945)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "047b9ae6-b7aa-4895-8253-946a7117e44e")
 	)
-	(text "VCO, 10MHz - 100MHz\nmixer\nBand pass\n"
-		(exclude_from_sim no)
-		(at 42.545 -45.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "be56042a-7cf0-4767-935d-2b4814795bf7")
+	(junction
+		(at 60.96 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04df987c-a186-402a-9f4d-ca2736ab7452")
 	)
-	(text "MT-080 AD831"
-		(exclude_from_sim no)
-		(at 132.715 -45.72 0)
-		(effects
-			(font
-				(size 2.032 2.032)
-				(thickness 0.4064)
-				(bold yes)
-			)
-		)
-		(uuid "d4201c97-5859-482a-bed6-2ad7d6036ae0")
+	(junction
+		(at 63.5 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "070053b9-d52e-40c6-b814-9baa4727d68e")
 	)
-	(text "I2C, LCD, I2C to parallel"
-		(exclude_from_sim no)
-		(at 42.545 -60.325 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "de26d80f-f083-4c8b-9dad-02dad8019054")
-	)
-	(text "RC? remove?"
-		(exclude_from_sim no)
-		(at 42.545 -92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f5c9cc82-e62f-4472-b2a3-e41fd6c44306")
-	)
-	(text "SoC, Module, ANT?"
-		(exclude_from_sim no)
-		(at 42.545 -76.835 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ffd4ab26-5daf-4226-a396-5e9f98e09d7a")
+	(junction
+		(at 207.01 67.945)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19238ef1-e0b5-4f2a-ba9a-45bddaceb437")
 	)
 	(junction
 		(at 69.85 51.435)
@@ -2495,28 +2087,34 @@
 		(uuid "2c4abb7c-9414-491f-b40b-141943a65ec5")
 	)
 	(junction
+		(at 118.11 79.375)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "52f04b46-4506-4c8b-aa6d-a2735e208228")
+	)
+	(junction
+		(at 118.11 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7309b3c7-e582-4ffb-836a-6587df998518")
+	)
+	(junction
 		(at 62.23 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "74bed189-b813-4712-a847-5e281feb9690")
 	)
 	(junction
-		(at 60.96 102.87)
+		(at 140.97 69.215)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9a74a96f-12c2-41ed-acec-07f56e97108b")
+		(uuid "86d7c177-e931-44bf-afca-d986d1d4f41d")
 	)
 	(junction
 		(at 200.025 123.825)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a457b188-8236-4da6-8224-2f757c61d597")
-	)
-	(junction
-		(at 118.11 79.375)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "aac4057e-e3ce-44bd-8171-a62cf9aac031")
 	)
 	(junction
 		(at 129.54 79.375)
@@ -2531,22 +2129,10 @@
 		(uuid "c6303428-567c-4878-9b61-934ff731308e")
 	)
 	(junction
-		(at 63.5 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cadc0113-efb3-43a0-a56d-8ea7c2b10996")
-	)
-	(junction
 		(at 67.31 48.895)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d93be08b-f9b4-4a84-9e4a-0a2b72d56a0a")
-	)
-	(junction
-		(at 181.61 51.435)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "db6006a8-13cc-43b5-ac28-c2f2bfc52247")
 	)
 	(junction
 		(at 140.97 79.375)
@@ -2554,8 +2140,12 @@
 		(color 0 0 0 0)
 		(uuid "e85d4361-0de5-48f2-aaa8-f3964a443d28")
 	)
+	(no_connect
+		(at 125.73 119.38)
+		(uuid "4364ad96-8570-4e9a-a549-e9fb7a52ce57")
+	)
 	(bus_entry
-		(at 76.2 102.87)
+		(at 76.2 105.41)
 		(size -2.54 -2.54)
 		(stroke
 			(width 0)
@@ -2564,7 +2154,7 @@
 		(uuid "07a8b800-2eaa-4a26-b3a0-4827c4e52d3e")
 	)
 	(bus_entry
-		(at 76.2 105.41)
+		(at 76.2 107.95)
 		(size -2.54 -2.54)
 		(stroke
 			(width 0)
@@ -2591,13 +2181,22 @@
 		(uuid "3ba0af87-77e0-43d5-9be9-7d89d981e155")
 	)
 	(bus_entry
-		(at 76.2 102.87)
+		(at 76.2 105.41)
 		(size -2.54 -2.54)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3e26120b-00f7-41b6-b74d-7ccfca156b40")
+	)
+	(bus_entry
+		(at 204.47 88.265)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5214ab98-b725-4dd0-93e9-646b17c2bc06")
 	)
 	(bus_entry
 		(at 109.22 99.06)
@@ -2618,6 +2217,15 @@
 		(uuid "8bd7309f-1581-4183-9f33-8492463af9e4")
 	)
 	(bus_entry
+		(at 210.185 88.265)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91b6f932-9ce5-4c61-918d-910f2a9e6d5b")
+	)
+	(bus_entry
 		(at 109.22 106.68)
 		(size 2.54 2.54)
 		(stroke
@@ -2627,13 +2235,22 @@
 		(uuid "9a5bbe81-9ad5-449c-a735-8dcc1fbdc258")
 	)
 	(bus_entry
-		(at 76.2 107.95)
+		(at 76.2 102.87)
 		(size -2.54 -2.54)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "acce2bf2-aa80-4446-9441-bcd0452271dd")
+	)
+	(bus_entry
+		(at 198.755 88.265)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae9ee28e-7b0a-427e-bf08-232635174ad2")
 	)
 	(bus_entry
 		(at 76.2 53.975)
@@ -2645,7 +2262,7 @@
 		(uuid "af476b6e-cd5b-4c7a-8f6a-c25118f3387e")
 	)
 	(bus_entry
-		(at 109.22 116.84)
+		(at 109.22 119.38)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -2670,15 +2287,6 @@
 			(type default)
 		)
 		(uuid "c9aa7c06-8771-422f-ba07-302ee451375a")
-	)
-	(bus_entry
-		(at 76.2 110.49)
-		(size -2.54 -2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da9c88b9-6c32-4a07-85fc-cada1b95db4e")
 	)
 	(bus_entry
 		(at 76.2 51.435)
@@ -2719,7 +2327,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.705 110.49) (xy 52.07 110.49)
+			(xy 52.705 107.95) (xy 52.07 107.95)
 		)
 		(stroke
 			(width 0)
@@ -2727,25 +2335,15 @@
 		)
 		(uuid "06325f3a-1f38-47d3-bd98-5d5fc381b664")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 205.105 107.95) (xy 217.17 107.95)
+			(xy 198.755 88.265) (xy 204.47 88.265)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "066632b9-9ef2-418d-af8f-6196543ade32")
-	)
-	(wire
-		(pts
-			(xy 181.61 48.895) (xy 181.61 51.435)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0766ba29-b73b-4dd4-bd85-90f0ce2673a8")
+		(uuid "0a10e322-c7e2-4edb-9037-5d9c92f194ee")
 	)
 	(wire
 		(pts
@@ -2769,6 +2367,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 97.155) (xy 63.5 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d2d4d60-c141-4122-8b3f-4e1a84e3db16")
+	)
+	(wire
+		(pts
 			(xy 69.85 51.435) (xy 69.85 61.595)
 		)
 		(stroke
@@ -2789,53 +2397,43 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 93.98) (xy 118.11 79.375)
+			(xy 212.725 67.945) (xy 212.725 71.755)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "120f06dd-d00f-441e-bbb0-89366f553fa9")
+		(uuid "1089e39a-a395-42cd-a2ae-42e4c5fb4a46")
 	)
 	(wire
 		(pts
-			(xy 115.57 79.375) (xy 118.11 79.375)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "162bfb48-245e-45ad-b509-16b8923e8b09")
-	)
-	(wire
-		(pts
-			(xy 60.96 97.155) (xy 60.96 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "183bfb26-1c84-4c92-a184-76b9f160e7fe")
-	)
-	(wire
-		(pts
-			(xy 60.96 102.87) (xy 73.66 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ba3a7c3-a5ff-4bfd-bd0a-da4248e029b2")
-	)
-	(wire
-		(pts
-			(xy 111.76 119.38) (xy 125.73 119.38)
+			(xy 111.76 121.92) (xy 125.73 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1e184f03-5fef-4055-82cc-3c4437b43446")
+	)
+	(wire
+		(pts
+			(xy 140.97 69.215) (xy 140.97 79.375)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f3a7652-0435-4aac-9de7-12aea04fa0fb")
+	)
+	(wire
+		(pts
+			(xy 156.21 93.98) (xy 180.34 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20f6050a-0779-4972-8aaf-772063626934")
 	)
 	(wire
 		(pts
@@ -2847,16 +2445,6 @@
 		)
 		(uuid "2199cac1-043e-4a63-9e6c-3a1a9af24378")
 	)
-	(bus
-		(pts
-			(xy 76.2 110.49) (xy 76.2 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22091bfd-f06c-4a79-8e5a-04e5fdde53d8")
-	)
 	(wire
 		(pts
 			(xy 64.77 46.355) (xy 64.77 61.595)
@@ -2866,6 +2454,16 @@
 			(type default)
 		)
 		(uuid "240349ba-75c6-419a-b6dd-3d11aecc35ca")
+	)
+	(bus
+		(pts
+			(xy 76.2 107.95) (xy 76.2 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28ea1e57-263c-4a79-a39f-9a127ec49bfa")
 	)
 	(bus
 		(pts
@@ -2889,13 +2487,23 @@
 	)
 	(wire
 		(pts
-			(xy 183.515 51.435) (xy 183.515 52.705)
+			(xy 118.11 69.215) (xy 140.97 69.215)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "33e0fc1d-074a-4331-87db-ca381274acbf")
+		(uuid "34e1e684-d3d5-42ec-a54d-ffc79e0c734e")
+	)
+	(bus
+		(pts
+			(xy 76.2 102.87) (xy 76.2 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35bcb95c-a942-4756-a896-86cfd3bcdf42")
 	)
 	(wire
 		(pts
@@ -2926,16 +2534,6 @@
 			(type default)
 		)
 		(uuid "3865cbd6-c4ff-4e34-a7af-94ce0e8b1526")
-	)
-	(wire
-		(pts
-			(xy 179.705 51.435) (xy 181.61 51.435)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3da4ea1e-81bc-4597-90d2-d6550617ee6b")
 	)
 	(wire
 		(pts
@@ -2987,9 +2585,19 @@
 		)
 		(uuid "485ba02f-9cd9-4220-b7cf-9fe0779ba370")
 	)
+	(bus
+		(pts
+			(xy 76.2 105.41) (xy 76.2 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c180dc7-75a7-43d3-b06f-f092ad830b45")
+	)
 	(wire
 		(pts
-			(xy 167.64 62.865) (xy 179.705 62.865)
+			(xy 157.48 80.01) (xy 169.545 80.01)
 		)
 		(stroke
 			(width 0)
@@ -3009,6 +2617,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.295 76.835) (xy 201.295 85.725)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "576a8b02-e6ea-451b-94d3-e5d83d650997")
+	)
+	(wire
+		(pts
 			(xy 118.11 93.98) (xy 125.73 93.98)
 		)
 		(stroke
@@ -3019,7 +2637,7 @@
 	)
 	(bus
 		(pts
-			(xy 109.22 116.84) (xy 109.22 114.3)
+			(xy 109.22 119.38) (xy 109.22 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3027,19 +2645,9 @@
 		)
 		(uuid "59375d79-de27-4126-9439-0bd9494417ee")
 	)
-	(bus
-		(pts
-			(xy 76.2 105.41) (xy 76.2 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d093718-6c6b-46c8-925b-b607955a6d91")
-	)
 	(wire
 		(pts
-			(xy 52.07 102.87) (xy 60.96 102.87)
+			(xy 52.07 105.41) (xy 60.96 105.41)
 		)
 		(stroke
 			(width 0)
@@ -3049,7 +2657,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 100.33) (xy 63.5 100.33)
+			(xy 52.07 102.87) (xy 63.5 102.87)
 		)
 		(stroke
 			(width 0)
@@ -3059,13 +2667,13 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 79.375) (xy 103.505 79.375)
+			(xy 118.11 78.105) (xy 118.11 79.375)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5f6e4c43-baa6-47e9-851c-8a999d0da3b8")
+		(uuid "5edb2022-8a6c-4de3-ae7d-3dbe812801f2")
 	)
 	(wire
 		(pts
@@ -3086,6 +2694,16 @@
 			(type default)
 		)
 		(uuid "637c4bf5-5a09-4425-99cd-e45ef78f264b")
+	)
+	(wire
+		(pts
+			(xy 63.5 102.87) (xy 73.66 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66dd4297-40a8-422b-a810-ea9bfdcf955c")
 	)
 	(wire
 		(pts
@@ -3117,15 +2735,15 @@
 		)
 		(uuid "6c49ba18-26a7-4ee8-97c9-6ad80591b4cb")
 	)
-	(bus
+	(wire
 		(pts
-			(xy 76.2 107.95) (xy 76.2 105.41)
+			(xy 201.295 71.755) (xy 201.295 67.945)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6f32ebe1-9219-480b-a4d7-e3c32846e1ba")
+		(uuid "6ca66a4f-18bd-4a5b-b06b-9e5d721e5002")
 	)
 	(wire
 		(pts
@@ -3139,16 +2757,6 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 97.155) (xy 63.5 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71baa414-b9b7-4a4b-8dc2-9441ccee4bec")
-	)
-	(wire
-		(pts
 			(xy 52.07 56.515) (xy 54.61 56.515)
 		)
 		(stroke
@@ -3156,6 +2764,16 @@
 			(type default)
 		)
 		(uuid "76f50a4a-f3b3-4367-b1cc-916537a06258")
+	)
+	(wire
+		(pts
+			(xy 207.01 67.945) (xy 207.01 71.755)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78c72e37-f90e-477a-a677-486f0997ebef")
 	)
 	(bus
 		(pts
@@ -3169,23 +2787,13 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 92.71) (xy 252.73 92.71)
+			(xy 245.11 97.79) (xy 252.73 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7c93400c-b86d-466f-9885-07c6bbce2fd8")
-	)
-	(wire
-		(pts
-			(xy 103.505 79.375) (xy 103.505 81.915)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e0eee06-2a77-48b8-a786-9d0073077b3a")
 	)
 	(bus
 		(pts
@@ -3209,17 +2817,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 121.92) (xy 125.73 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8895db69-b8ee-4ee9-93ba-c187e4b5f37b")
-	)
-	(wire
-		(pts
-			(xy 179.705 60.325) (xy 179.705 62.865)
+			(xy 169.545 78.105) (xy 169.545 80.01)
 		)
 		(stroke
 			(width 0)
@@ -3227,25 +2825,15 @@
 		)
 		(uuid "891ed7ab-36f8-496a-92fc-d9789f257fa7")
 	)
-	(bus
-		(pts
-			(xy 197.485 88.265) (xy 217.17 88.265)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e28e788-8d5e-43c3-b3d7-ea8511f300e5")
-	)
 	(wire
 		(pts
-			(xy 205.105 111.76) (xy 217.17 111.76)
+			(xy 207.01 67.945) (xy 212.725 67.945)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8f3a24cb-95e6-4c5a-9544-967c63105fdd")
+		(uuid "8ec13337-a2c0-430f-b4b7-68289ebbd710")
 	)
 	(wire
 		(pts
@@ -3257,15 +2845,15 @@
 		)
 		(uuid "8fc55c36-1e04-4973-9637-1cb73e00f5da")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 63.5 100.33) (xy 73.66 100.33)
+			(xy 175.26 88.265) (xy 198.755 88.265)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "90dd396f-4140-42e9-9d2e-5e154f420377")
+		(uuid "8ffe7b50-e0d6-4c98-9856-b0b82e42f304")
 	)
 	(bus
 		(pts
@@ -3287,15 +2875,15 @@
 		)
 		(uuid "92de3cbc-479d-48c3-8c2c-807cf5366fbf")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 52.07 107.95) (xy 73.66 107.95)
+			(xy 210.185 88.265) (xy 217.17 88.265)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "93df026d-6b55-42f1-ac57-99237e58400b")
+		(uuid "938d8011-f172-45c5-beae-804ebe4e8399")
 	)
 	(wire
 		(pts
@@ -3306,26 +2894,6 @@
 			(type default)
 		)
 		(uuid "959ac7a8-0190-40b9-87c2-d8209aabb8a7")
-	)
-	(bus
-		(pts
-			(xy 76.2 110.49) (xy 76.2 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97d4125d-0646-4592-99af-052764e4ba16")
-	)
-	(wire
-		(pts
-			(xy 156.21 93.98) (xy 167.64 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "988a3d9b-ff1c-41a0-acc8-5b05a42d7a32")
 	)
 	(wire
 		(pts
@@ -3339,16 +2907,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 65.405) (xy 140.97 79.375)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9950c558-bbd4-47ef-a8c9-99ae81c81307")
-	)
-	(wire
-		(pts
 			(xy 72.39 53.975) (xy 73.66 53.975)
 		)
 		(stroke
@@ -3359,16 +2917,6 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 51.435) (xy 183.515 51.435)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9bb4d9f8-692d-4659-99d6-7d4767293711")
-	)
-	(wire
-		(pts
 			(xy 111.76 109.22) (xy 125.73 109.22)
 		)
 		(stroke
@@ -3376,6 +2924,26 @@
 			(type default)
 		)
 		(uuid "9d7c06c7-8c69-4771-80e8-35db53218cef")
+	)
+	(wire
+		(pts
+			(xy 201.295 65.405) (xy 201.295 67.945)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a21411bd-2223-48b9-a31b-fdbc96c0c481")
+	)
+	(wire
+		(pts
+			(xy 118.11 86.36) (xy 118.11 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a261d1e1-1f8a-410a-a81a-f259ccfe7db1")
 	)
 	(wire
 		(pts
@@ -3399,13 +2967,33 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 65.405) (xy 183.515 65.405)
+			(xy 177.8 110.49) (xy 217.17 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ad3986b4-1f06-40e7-ae86-a86dadfa8b58")
+		(uuid "a47dae2d-5678-4573-8b72-dff7240e88e0")
+	)
+	(bus
+		(pts
+			(xy 204.47 88.265) (xy 210.185 88.265)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9dfae0d-6bac-40e2-9895-ff0ed1ffa5bf")
+	)
+	(wire
+		(pts
+			(xy 212.725 76.835) (xy 212.725 85.725)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac1fc965-9993-4a1b-9ca9-f8007606a8bc")
 	)
 	(wire
 		(pts
@@ -3429,6 +3017,36 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 79.375) (xy 118.11 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1d4cff7-cf00-4af7-a71b-cfcc6e5be67f")
+	)
+	(wire
+		(pts
+			(xy 180.34 107.95) (xy 180.34 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b33a4d41-2bdd-4026-aac5-eaeec092222b")
+	)
+	(wire
+		(pts
+			(xy 60.96 105.41) (xy 73.66 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b81b7897-b137-4624-9623-c1e1a10c21cb")
+	)
+	(wire
+		(pts
 			(xy 69.85 51.435) (xy 52.07 51.435)
 		)
 		(stroke
@@ -3436,6 +3054,16 @@
 			(type default)
 		)
 		(uuid "b8391ecb-21c4-4d6e-9163-c8f173de2f1c")
+	)
+	(wire
+		(pts
+			(xy 60.96 97.155) (xy 60.96 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bac7945b-36ba-4030-afb6-b183d864a6fd")
 	)
 	(wire
 		(pts
@@ -3469,7 +3097,17 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 69.85) (xy 64.77 66.675)
+			(xy 180.34 107.95) (xy 217.17 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca5e3381-74e8-4dbb-8f8b-c5ce87fe1801")
+	)
+	(wire
+		(pts
+			(xy 64.77 68.58) (xy 64.77 66.675)
 		)
 		(stroke
 			(width 0)
@@ -3479,7 +3117,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 95.25) (xy 252.73 95.25)
+			(xy 245.11 100.33) (xy 252.73 100.33)
 		)
 		(stroke
 			(width 0)
@@ -3499,13 +3137,23 @@
 	)
 	(bus
 		(pts
-			(xy 109.22 121.92) (xy 109.22 116.84)
+			(xy 109.22 121.92) (xy 109.22 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d5c3a970-c8fc-47c7-8d00-88f3d04e6ca9")
+	)
+	(wire
+		(pts
+			(xy 118.11 70.485) (xy 118.11 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d69a129b-d13b-4db2-a54d-5cea3e769715")
 	)
 	(wire
 		(pts
@@ -3519,7 +3167,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 96.52) (xy 167.64 96.52)
+			(xy 156.21 96.52) (xy 177.8 96.52)
 		)
 		(stroke
 			(width 0)
@@ -3549,6 +3197,26 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 76.835) (xy 207.01 85.725)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e400792c-3f7b-49f7-994e-1517d1b5dd9b")
+	)
+	(wire
+		(pts
+			(xy 201.295 67.945) (xy 207.01 67.945)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e595704e-d000-47a2-bc5d-6585f5a6f2d5")
+	)
+	(wire
+		(pts
 			(xy 129.54 79.375) (xy 129.54 81.28)
 		)
 		(stroke
@@ -3559,17 +3227,17 @@
 	)
 	(wire
 		(pts
-			(xy 183.515 60.325) (xy 183.515 65.405)
+			(xy 177.8 110.49) (xy 177.8 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ecd3cf59-bde8-4a8f-9934-b62febdd8c5c")
+		(uuid "ed3246c1-97a7-4b91-a0a1-6c41a4831e0c")
 	)
 	(wire
 		(pts
-			(xy 52.07 105.41) (xy 73.66 105.41)
+			(xy 52.07 100.33) (xy 73.66 100.33)
 		)
 		(stroke
 			(width 0)
@@ -3599,7 +3267,17 @@
 	)
 	(wire
 		(pts
-			(xy 52.705 110.49) (xy 52.705 111.125)
+			(xy 140.97 65.405) (xy 140.97 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f61c1dcf-b302-4e81-95f4-5c4736813009")
+	)
+	(wire
+		(pts
+			(xy 52.705 107.95) (xy 52.705 108.585)
 		)
 		(stroke
 			(width 0)
@@ -3619,16 +3297,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.705 52.705) (xy 179.705 51.435)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fab33675-f334-4645-870f-60d08467ad12")
-	)
-	(wire
-		(pts
 			(xy 52.07 53.975) (xy 72.39 53.975)
 		)
 		(stroke
@@ -3638,12 +3306,12 @@
 		(uuid "fc10b632-f040-4096-a2cc-7ea94be2aa25")
 	)
 	(label "I2C.SCL"
-		(at 73.66 102.87 180)
+		(at 66.04 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "04ede216-2a1c-4437-817f-62e4ae244f31")
 	)
@@ -3666,6 +3334,16 @@
 			(justify left bottom)
 		)
 		(uuid "11e59aa9-414f-4cf3-8ae1-f18b7c82629e")
+	)
+	(label "USB_ESP_D-"
+		(at 112.395 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "18bb66ee-ebe7-4101-b50c-e665c2029e29")
 	)
 	(label "RADIO.HI"
 		(at 52.07 51.435 0)
@@ -3728,7 +3406,7 @@
 		(uuid "458bbed1-68dd-4cf4-9378-5ff083792e06")
 	)
 	(label "IO2"
-		(at 167.64 62.865 0)
+		(at 157.48 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3737,23 +3415,13 @@
 		)
 		(uuid "48a67884-2df4-4a45-8fdc-fc2278ce647a")
 	)
-	(label "IO9"
-		(at 167.64 65.405 0)
+	(label "I2C.SDA"
+		(at 66.04 102.87 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
-		)
-		(uuid "498bdd21-865c-421a-ba19-fb0c5684d226")
-	)
-	(label "I2C.SDA"
-		(at 73.66 100.33 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
 		)
 		(uuid "4bcaffc7-86bb-458b-aca4-46164cbae501")
 	)
@@ -3767,6 +3435,16 @@
 		)
 		(uuid "50f58f14-e5b2-46b9-b378-f49205675d16")
 	)
+	(label "I2S.LRCK"
+		(at 201.295 77.47 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "66686399-26cc-4c83-a4aa-dd86e0517402")
+	)
 	(label "I2S.BCK"
 		(at 112.395 114.3 0)
 		(effects
@@ -3778,7 +3456,7 @@
 		(uuid "692871be-91b7-4416-9f2b-9a96d1a3ee81")
 	)
 	(label "AUDIO_SEL"
-		(at 205.105 111.76 0)
+		(at 205.105 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3798,24 +3476,24 @@
 		(uuid "6b95eb8b-9238-4e09-97d3-e9c7d92eca21")
 	)
 	(label "I2C.INT"
-		(at 73.66 105.41 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6fddb4a3-86e4-4192-8436-6da016f36bdb")
-	)
-	(label "I2S{LRCK, DIN, BCK}"
-		(at 197.485 88.265 0)
+		(at 66.04 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "702848e3-f022-4302-a739-fd4e0a81130a")
+		(uuid "6fddb4a3-86e4-4192-8436-6da016f36bdb")
+	)
+	(label "USB_ESP_D+"
+		(at 112.395 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "700778f3-073a-48d8-9dbf-973bd2bfddee")
 	)
 	(label "EN"
 		(at 120.65 93.98 0)
@@ -3857,15 +3535,15 @@
 		)
 		(uuid "8df9142a-fbd4-412c-81e0-167633e40088")
 	)
-	(label "I2C.~{RST}"
-		(at 73.66 107.95 180)
+	(label "I2S.DIN"
+		(at 207.01 77.47 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "914fa7a4-8d5b-42f2-a303-989f15acb05e")
+		(uuid "9275c118-47d9-4646-a33d-9b78fac2fce1")
 	)
 	(label "I2C{SDA, SCL, INT}"
 		(at 84.455 114.3 0)
@@ -3888,7 +3566,7 @@
 		(uuid "c56c34b8-d76c-4eae-b3d1-1327d35c97a1")
 	)
 	(label "I2C.SCL"
-		(at 112.395 119.38 0)
+		(at 112.395 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3896,6 +3574,26 @@
 			(justify left bottom)
 		)
 		(uuid "d7543618-e55a-4f29-a497-45877621df32")
+	)
+	(label "I2S{LRCK, DIN, BCK}"
+		(at 175.26 88.265 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d78960cd-6543-453e-9e27-89810724c870")
+	)
+	(label "I2S.BCK"
+		(at 212.725 77.47 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e22b064e-1ba8-442d-baf2-3fa616f1d51c")
 	)
 	(label "AUDIO_SEL"
 		(at 167.64 96.52 180)
@@ -3916,16 +3614,6 @@
 			(justify left bottom)
 		)
 		(uuid "f3da6e7c-f27d-41f7-9c18-4710760b836d")
-	)
-	(label "IO9"
-		(at 114.3 121.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f87a2922-f258-4515-ac71-3ebb8d8a94fd")
 	)
 	(label "AMP_SD"
 		(at 205.105 107.95 0)
@@ -3948,7 +3636,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05c3424b-b840-4bf8-9a64-0975dd9095bc")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR09"
 			(at 62.23 95.25 0)
 			(effects
 				(font
@@ -3998,7 +3686,7 @@
 		(instances
 			(project "Tesla_sextant_BT"
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "#PWR06")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -4072,36 +3760,155 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 183.515 56.515 0)
-		(mirror y)
+		(lib_id "RF_Module:ESP32-C3-WROOM-02")
+		(at 140.97 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "13f85ce4-d118-4892-ad58-daa51b5e565d")
-		(property "Reference" "R27"
-			(at 185.42 55.2449 0)
+		(uuid "0b9204aa-464b-4002-954a-9f1225b58ec0")
+		(property "Reference" "U1"
+			(at 143.1133 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
+			)
+		)
+		(property "Value" "ESP32-C3-WROOM-02"
+			(at 143.1133 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "RF_Module:ESP32-C3-WROOM-02"
+			(at 140.97 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf"
+			(at 140.97 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "802.11 b/g/n Wi­Fi and Bluetooth 5 module, ESP32­C3 SoC, RISC­V microprocessor, On-board antenna"
+			(at 140.97 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "14"
+			(uuid "52bcafa9-419b-480a-81b0-97e2920bd3ec")
+		)
+		(pin "6"
+			(uuid "4092a38e-3534-4543-a469-d2b4e557e89a")
+		)
+		(pin "7"
+			(uuid "4785e514-96f3-44eb-a1b6-677e531cee1c")
+		)
+		(pin "2"
+			(uuid "fecc0065-e364-4bb9-9813-c683ca594866")
+		)
+		(pin "17"
+			(uuid "c9750af7-c62d-42e9-a590-cef4ab82a054")
+		)
+		(pin "15"
+			(uuid "7a35951d-ac35-4e74-88ca-31ac6755629b")
+		)
+		(pin "18"
+			(uuid "4d059a4d-d93d-46aa-8cb4-b6977f1dba8f")
+		)
+		(pin "4"
+			(uuid "fe40de82-6011-4286-b420-9c1b9bfaf69d")
+		)
+		(pin "13"
+			(uuid "0945ca97-ec20-4bbc-aee2-32f6de643eb0")
+		)
+		(pin "8"
+			(uuid "48859f40-3a63-4a25-a896-0c8b89a95eb0")
+		)
+		(pin "16"
+			(uuid "7e534c85-d449-411a-984a-d6c78f5c61c4")
+		)
+		(pin "3"
+			(uuid "8806b5ae-c941-4dbd-9911-0a928d7aacbc")
+		)
+		(pin "19"
+			(uuid "d078dd0d-f91b-4eea-9e59-842060651e38")
+		)
+		(pin "5"
+			(uuid "b695e6fd-ca53-494c-a33f-bbba47350850")
+		)
+		(pin "10"
+			(uuid "093ae6b3-898d-4412-a74c-2ab8a1ded519")
+		)
+		(pin "9"
+			(uuid "00e60d0d-8eb7-4462-bf63-b254eed88dd1")
+		)
+		(pin "11"
+			(uuid "ff51097b-64d4-4d2e-ac17-1adc188fc838")
+		)
+		(pin "12"
+			(uuid "c05510ae-9dbc-430c-ab57-9f2c9808ba7b")
+		)
+		(pin "1"
+			(uuid "6d47d430-5c24-4d68-b25a-f6b3bd37c29c")
+		)
+		(instances
+			(project ""
+				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 212.725 74.295 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "11acd88b-b8ef-4fe0-b944-11c49dfea6a1")
+		(property "Reference" "R5"
+			(at 214.122 73.152 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
 			)
 		)
 		(property "Value" "10K"
-			(at 185.42 57.7849 0)
+			(at 214.122 75.692 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 185.293 56.515 90)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 212.725 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4110,7 +3917,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 183.515 56.515 0)
+			(at 212.725 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4118,8 +3925,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 183.515 56.515 0)
+		(property "Description" "Resistor, small symbol"
+			(at 212.725 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 212.725 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4128,15 +3944,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "d72f0771-6718-463d-aa14-2179ee34612a")
+			(uuid "59215ee8-aeb6-4197-8bb0-842ee12c1122")
 		)
 		(pin "2"
-			(uuid "9b3e5f9a-3bae-4767-9679-f04cb3c95f70")
+			(uuid "a1c78935-4374-492e-96d5-d18bdd3b645e")
 		)
 		(instances
 			(project "Tesla_sextant_BT"
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "R27")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -4153,7 +3969,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "181b1723-d519-4e85-8409-8f340b63b620")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR02"
 			(at 54.61 64.77 0)
 			(effects
 				(font
@@ -4203,7 +4019,7 @@
 		(instances
 			(project "Tesla_sextant_BT"
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "#PWR05")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -4220,7 +4036,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20460629-6670-4add-8d54-c5a457e95afd")
-		(property "Reference" "C36"
+		(property "Reference" "C1"
 			(at 123.825 72.39 90)
 			(effects
 				(font
@@ -4228,7 +4044,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "100nF"
 			(at 123.825 74.93 90)
 			(effects
 				(font
@@ -4236,7 +4052,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 120.015 78.4098 0)
 			(effects
 				(font
@@ -4263,6 +4079,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 123.825 79.375 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bf66f131-dbc2-4b18-b40f-9bfb2cb6a942")
 		)
@@ -4272,7 +4097,7 @@
 		(instances
 			(project "Tesla_sextant_BT"
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "C36")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -4289,7 +4114,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23636f87-0f9c-4d5e-a4d6-10dbd920d4a9")
-		(property "Reference" "R1"
+		(property "Reference" "R6"
 			(at 59.055 93.3449 0)
 			(effects
 				(font
@@ -4307,7 +4132,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 60.96 94.615 0)
 			(effects
 				(font
@@ -4334,6 +4159,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 60.96 94.615 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9952af7b-df12-4130-b46b-799e58b05c07")
 		)
@@ -4343,76 +4177,7 @@
 		(instances
 			(project ""
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 110.49 79.375 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2906795e-a824-4fd1-b9c0-a7318531337b")
-		(property "Reference" "SW1"
-			(at 110.49 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 110.49 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.49 74.295 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 74.295 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 110.49 79.375 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3751503a-2012-4730-a38e-da7081306c56")
-		)
-		(pin "1"
-			(uuid "5043fdb0-a2e2-480f-9c32-36a6f7958ae3")
-		)
-		(instances
-			(project ""
-				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "SW1")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -4429,7 +4194,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f056ef0-71b7-49c5-b88a-0cd8a12d4975")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR011"
 			(at 195.58 137.795 0)
 			(effects
 				(font
@@ -4479,7 +4244,7 @@
 		(instances
 			(project "Tesla_sextant_BT"
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "#PWR018")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -4487,16 +4252,16 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 257.81 92.71 0)
+		(at 257.81 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "306ffba4-245f-468a-a0b1-dcf0c75e69da")
-		(property "Reference" "J4"
-			(at 260.985 92.7099 0)
+		(property "Reference" "J2"
+			(at 260.985 97.7899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4505,7 +4270,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 260.985 95.2499 0)
+			(at 260.985 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4513,8 +4278,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 257.81 92.71 0)
+		(property "Footprint" "Tesla_Library:Conn_Solder_1x02_SMD"
+			(at 257.81 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4523,7 +4288,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 257.81 92.71 0)
+			(at 257.81 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4532,7 +4297,16 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 257.81 92.71 0)
+			(at 257.81 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 257.81 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4549,88 +4323,6 @@
 		(instances
 			(project "Tesla_sextant_BT"
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x06")
-		(at 46.99 102.87 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "38af34b8-bf00-4132-a0f1-60c163a69f41")
-		(property "Reference" "J2"
-			(at 43.815 102.8699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x06"
-			(at 43.815 105.4099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 46.99 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 46.99 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 46.99 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "2a28bf72-5649-4d34-af40-7a9084963143")
-		)
-		(pin "3"
-			(uuid "b1658427-740d-404d-a3f1-4f94f25881f5")
-		)
-		(pin "1"
-			(uuid "caadbfa8-ec6d-4598-b16b-e17b80c0d87f")
-		)
-		(pin "2"
-			(uuid "1152849c-baaf-445b-a9a6-5dc2430b89a6")
-		)
-		(pin "5"
-			(uuid "9d53af6c-677f-43d3-8973-564d75864cc5")
-		)
-		(pin "6"
-			(uuid "a562cd5b-a086-43d5-871a-3c899232b0d1")
-		)
-		(instances
-			(project "Tesla_sextant_BT"
-				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
 					(reference "J2")
 					(unit 1)
 				)
@@ -4639,7 +4331,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 64.77 69.85 0)
+		(at 64.77 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4647,8 +4339,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "395ee144-c794-48ca-b088-62a693795301")
-		(property "Reference" "#PWR07"
-			(at 64.77 76.2 0)
+		(property "Reference" "#PWR05"
+			(at 64.77 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4657,7 +4349,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 64.77 74.295 0)
+			(at 64.77 73.025 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4665,7 +4357,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 69.85 0)
+			(at 64.77 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4674,7 +4366,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 69.85 0)
+			(at 64.77 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4683,7 +4375,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 64.77 69.85 0)
+			(at 64.77 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4697,7 +4389,86 @@
 		(instances
 			(project "Tesla_sextant_BT"
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "#PWR07")
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 201.295 74.295 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3a6c3c99-aca9-4e08-9b50-1305973f5110")
+		(property "Reference" "R3"
+			(at 202.438 73.152 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 202.438 75.692 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 201.295 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 201.295 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 201.295 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 201.295 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5fd094a-2e90-4d99-b782-5aba6874a08b")
+		)
+		(pin "2"
+			(uuid "c4fc3025-8ba1-4a7b-bc08-d78d25ae7d7e")
+		)
+		(instances
+			(project "Tesla_sextant_BT"
+				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -4713,7 +4484,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a8390f5-65f6-4300-950b-9a60d87817f1")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR062"
 			(at 119.38 189.23 0)
 			(effects
 				(font
@@ -4763,7 +4534,7 @@
 		(instances
 			(project ""
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "#PWR010")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -4780,7 +4551,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b52e2d7-c6af-401d-9d52-134a970bee58")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR013"
 			(at 200.025 137.795 0)
 			(effects
 				(font
@@ -4830,7 +4601,161 @@
 		(instances
 			(project "Tesla_sextant_BT"
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "#PWR062")
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 118.11 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3fc48a7d-cc1e-4e3c-89d5-d82f498a4167")
+		(property "Reference" "TP1"
+			(at 113.03 85.0899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 113.03 87.6299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.5mm"
+			(at 118.11 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 118.11 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3551544b-97df-4e59-a0c0-68a203be140f")
+		)
+		(instances
+			(project ""
+				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x05")
+		(at 46.99 102.87 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40dcebe3-00de-49f1-897f-2be8b8f65e1d")
+		(property "Reference" "J3"
+			(at 46.99 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x05"
+			(at 46.99 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.00mm:PinSocket_1x05_P2.00mm_Vertical"
+			(at 46.99 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 46.99 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 46.99 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "70dd7726-0df7-4e5a-be7b-21da90137c84")
+		)
+		(pin "3"
+			(uuid "ae49c70c-ff72-4910-bcfe-318f1861b337")
+		)
+		(pin "5"
+			(uuid "c17905ae-4f8a-49a5-a02b-da033ce5ae84")
+		)
+		(pin "1"
+			(uuid "9ee5c804-a685-43fc-a03b-363924e9fa40")
+		)
+		(pin "4"
+			(uuid "f0a055c2-d6b9-4ad4-8787-66d7bdd79488")
+		)
+		(instances
+			(project "Tesla_sextant_BT"
+				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -4891,6 +4816,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 67.31 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d9958e8d-a331-4fda-9ffc-856813a5cbf1")
 		)
@@ -4911,6 +4845,72 @@
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
 					(reference "D1")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 201.295 65.405 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "483d7dbe-2915-44d2-bf25-4c3ed353dfef")
+		(property "Reference" "#PWR04"
+			(at 201.295 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 201.295 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.295 65.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.295 65.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 201.295 65.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ebc07c21-7e47-401e-9ba9-2d9031cc81fc")
+		)
+		(instances
+			(project ""
+				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
+					(reference "#PWR04")
+					(unit 1)
 				)
 			)
 		)
@@ -4943,7 +4943,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopBottom"
 			(at 93.345 180.34 0)
 			(effects
 				(font
@@ -4962,6 +4962,15 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
+			(at 93.345 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
 			(at 93.345 180.34 0)
 			(effects
 				(font
@@ -5036,6 +5045,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 64.77 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5f3f89b7-0633-47b0-8242-5774b8300a82")
 		)
@@ -5070,7 +5088,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6645195d-236d-4538-ade9-e9cc9363374d")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR039"
 			(at 66.675 189.23 0)
 			(effects
 				(font
@@ -5120,7 +5138,7 @@
 		(instances
 			(project ""
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "#PWR08")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -5136,7 +5154,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "682ab329-6cbd-43df-a9b2-198d6f1736b1")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR018"
 			(at 39.37 189.23 0)
 			(effects
 				(font
@@ -5186,7 +5204,7 @@
 		(instances
 			(project ""
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "#PWR01")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -5203,7 +5221,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6dd93b4c-37f7-4ade-b3ce-5a093a9e345e")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR01"
 			(at 54.61 46.355 0)
 			(effects
 				(font
@@ -5253,7 +5271,7 @@
 		(instances
 			(project "Tesla_sextant_BT"
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "#PWR04")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -5270,7 +5288,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7104cf0e-4cac-40c2-862e-7696e428d54f")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR08"
 			(at 53.975 95.25 0)
 			(effects
 				(font
@@ -5320,7 +5338,7 @@
 		(instances
 			(project "Tesla_sextant_BT"
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "#PWR03")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -5354,7 +5372,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopBottom"
 			(at 39.37 180.34 0)
 			(effects
 				(font
@@ -5381,6 +5399,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 39.37 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bdddd502-e0a9-4b6c-8a58-3425fd52ddfe")
 		)
@@ -5395,7 +5422,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 181.61 48.895 0)
+		(at 169.545 70.485 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5403,8 +5430,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f23f3f3-a210-453b-a200-a90a69b03e6c")
-		(property "Reference" "#PWR089"
-			(at 181.61 52.705 0)
+		(property "Reference" "#PWR06"
+			(at 169.545 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5413,7 +5440,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 181.61 44.45 0)
+			(at 169.545 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5421,7 +5448,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 48.895 0)
+			(at 169.545 70.485 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5430,7 +5457,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 48.895 0)
+			(at 169.545 70.485 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5439,7 +5466,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 181.61 48.895 0)
+			(at 169.545 70.485 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5453,7 +5480,7 @@
 		(instances
 			(project "Tesla_sextant_BT"
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "#PWR089")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -5461,7 +5488,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 52.705 111.125 0)
+		(at 52.705 108.585 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5469,8 +5496,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85292676-dd39-4c30-a1ff-4c6e7196e03d")
-		(property "Reference" "#PWR02"
-			(at 52.705 117.475 0)
+		(property "Reference" "#PWR010"
+			(at 52.705 114.935 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5479,7 +5506,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 52.705 115.57 0)
+			(at 52.705 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5487,7 +5514,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.705 111.125 0)
+			(at 52.705 108.585 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5496,7 +5523,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.705 111.125 0)
+			(at 52.705 108.585 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5505,7 +5532,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 52.705 111.125 0)
+			(at 52.705 108.585 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5519,7 +5546,7 @@
 		(instances
 			(project "Tesla_sextant_BT"
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "#PWR02")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -5553,7 +5580,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopBottom"
 			(at 119.38 180.34 0)
 			(effects
 				(font
@@ -5572,6 +5599,15 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
+			(at 119.38 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
 			(at 119.38 180.34 0)
 			(effects
 				(font
@@ -5647,6 +5683,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 69.85 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d9958e8d-a331-4fda-9ffc-856813a5cbf5")
 		)
@@ -5681,7 +5726,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4b7d09e-b315-4e98-83f4-9b81b61f1a7e")
-		(property "Reference" "R2"
+		(property "Reference" "R7"
 			(at 66.04 93.3449 0)
 			(effects
 				(font
@@ -5699,7 +5744,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 63.5 94.615 0)
 			(effects
 				(font
@@ -5726,6 +5771,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 63.5 94.615 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9952af7b-df12-4130-b46b-799e58b05c08")
 		)
@@ -5735,7 +5789,7 @@
 		(instances
 			(project ""
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "R2")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -5747,12 +5801,12 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5f371df-4aa3-4909-9e66-962208969d1b")
-		(property "Reference" "J3"
+		(property "Reference" "J4"
 			(at 184.15 123.8249 0)
 			(effects
 				(font
@@ -5770,7 +5824,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Tesla_Library:Conn_Solder_1x02_SMD"
 			(at 187.325 123.825 0)
 			(effects
 				(font
@@ -5797,6 +5851,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 187.325 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "43a98bbe-bc0c-4572-8dba-cb55feb11376")
 		)
@@ -5806,7 +5869,7 @@
 		(instances
 			(project ""
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "J3")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -5867,6 +5930,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 72.39 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d9958e8d-a331-4fda-9ffc-856813a5cbf6")
 		)
@@ -5892,6 +5964,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 118.11 74.295 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b301f030-f7b3-4ffb-bd05-3a680a77e8dc")
+		(property "Reference" "R1"
+			(at 115.57 73.0249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 115.57 75.5649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 116.332 74.295 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 118.11 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 118.11 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "26e0b0a2-0a53-4f6e-8aa1-997555b64227")
+		)
+		(pin "2"
+			(uuid "a42ec620-bd93-4fbd-9d2f-60d1345260fb")
+		)
+		(instances
+			(project "Tesla_sextant_BT"
+				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 93.345 182.88 0)
 		(unit 1)
@@ -5901,7 +6051,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b41b1b4c-0b23-4a66-90ab-db0a8d684490")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR060"
 			(at 93.345 189.23 0)
 			(effects
 				(font
@@ -5951,73 +6101,7 @@
 		(instances
 			(project ""
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 103.505 81.915 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b6704767-9e0f-4910-9f8e-738372cbd0e5")
-		(property "Reference" "#PWR091"
-			(at 103.505 88.265 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 103.505 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 103.505 81.915 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 103.505 81.915 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 103.505 81.915 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3c16c310-d543-4c46-844f-dc687133d275")
-		)
-		(instances
-			(project "Tesla_sextant_BT"
-				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "#PWR091")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -6033,7 +6117,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6a9e97b-c121-4167-8a18-1546993e4ce7")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR03"
 			(at 140.97 69.215 0)
 			(effects
 				(font
@@ -6083,7 +6167,7 @@
 		(instances
 			(project ""
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "#PWR013")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -6117,7 +6201,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopBottom"
 			(at 66.675 180.34 0)
 			(effects
 				(font
@@ -6144,6 +6228,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 66.675 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bdddd502-e0a9-4b6c-8a58-3425fd52de00")
 		)
@@ -6151,126 +6244,6 @@
 			(project ""
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
 					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "RF_Module:ESP32-C3-WROOM-02U")
-		(at 140.97 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d62d9976-81bb-454e-8fd3-83df4b06982b")
-		(property "Reference" "U1"
-			(at 143.1133 86.995 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ESP32-C3-WROOM-02U"
-			(at 143.1133 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "RF_Module:ESP32-C3-WROOM-02U"
-			(at 140.97 112.395 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf"
-			(at 140.97 112.395 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "802.11 b/g/n Wi­Fi and Bluetooth 5 module, ESP32­C3 SoC, RISC­V microprocessor, On-board antenna"
-			(at 140.97 112.395 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "c26a3a41-4791-4d8f-8d8f-4813eb55e057")
-		)
-		(pin "16"
-			(uuid "96ce35ca-873b-4b56-aa91-92715a3afc69")
-		)
-		(pin "18"
-			(uuid "79a04486-3d9e-4193-9516-38cbafe26dc4")
-		)
-		(pin "17"
-			(uuid "1ee6af1e-4c4f-4992-91b9-5ec44a3b2d7b")
-		)
-		(pin "15"
-			(uuid "62d243ad-fd33-4909-84d0-a45a46226ce2")
-		)
-		(pin "14"
-			(uuid "766c9b27-c01d-474e-ab8f-640b05f1b8fb")
-		)
-		(pin "3"
-			(uuid "004b3fa4-9dca-4dfd-8c1e-3c17bebef67a")
-		)
-		(pin "4"
-			(uuid "786bd199-be09-485d-a47b-625a98734165")
-		)
-		(pin "9"
-			(uuid "2438d629-fd34-40c5-8359-7efefd6a1943")
-		)
-		(pin "2"
-			(uuid "8286d192-bc2f-4eb5-b542-f4d23077f809")
-		)
-		(pin "12"
-			(uuid "07b993f6-35d7-4abb-b599-4598f426c268")
-		)
-		(pin "7"
-			(uuid "8954ac72-196b-4b15-9e38-9cf7a2c37305")
-		)
-		(pin "8"
-			(uuid "6def3cc3-c3d8-4802-a746-e6bcd875bad9")
-		)
-		(pin "6"
-			(uuid "fa7cef09-4d84-4acc-8b74-457f5d4c696a")
-		)
-		(pin "10"
-			(uuid "fd4fd498-9690-40bb-8df4-4c8d59929a89")
-		)
-		(pin "13"
-			(uuid "a3fe5113-f9f4-4a5d-8fbd-670d3908b2cf")
-		)
-		(pin "1"
-			(uuid "e01e0b3e-e97d-4b82-b5f4-1cc911dd7ed6")
-		)
-		(pin "19"
-			(uuid "7d9161c7-086b-4576-9bef-ee8bcaaf7fd0")
-		)
-		(pin "11"
-			(uuid "e1ad81e2-4a88-4bf3-988c-e5ee3269904e")
-		)
-		(instances
-			(project "Tesla_sextant_BT"
-				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -6287,7 +6260,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d97aff23-f194-473e-9334-5e09cd023159")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR07"
 			(at 129.54 87.63 0)
 			(effects
 				(font
@@ -6337,7 +6310,85 @@
 		(instances
 			(project ""
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "#PWR011")
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 207.01 74.295 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "ddbdc894-ca9a-424a-8ee8-f1331c704331")
+		(property "Reference" "R4"
+			(at 208.28 73.152 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K"
+			(at 208.28 75.692 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 207.01 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 207.01 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 207.01 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3647da74-5d9f-47b1-8655-9764459e8031")
+		)
+		(pin "2"
+			(uuid "b9f9595d-1320-4af0-882e-56d387990dd6")
+		)
+		(instances
+			(project "Tesla_sextant_BT"
+				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -6398,6 +6449,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 200.025 127.635 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "329b7af7-696f-4cd3-a725-177fbffbbe8a")
 		)
@@ -6414,86 +6474,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x05")
-		(at 46.99 51.435 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e80e1237-424c-4e9b-a952-ce65a23456ee")
-		(property "Reference" "J1"
-			(at 43.815 50.1649 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x05"
-			(at 43.815 52.7049 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 46.99 51.435 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 46.99 51.435 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 46.99 51.435 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "17afc1a7-58ac-4a39-aae1-61020f4ff328")
-		)
-		(pin "4"
-			(uuid "663b4203-15ec-4d99-954d-68bd05b6531a")
-		)
-		(pin "1"
-			(uuid "c1297e3a-d32a-4569-a961-faa268b556ef")
-		)
-		(pin "2"
-			(uuid "b4bb6c69-e887-403e-9767-82e31a0471df")
-		)
-		(pin "5"
-			(uuid "0293b8fc-d697-4efe-89ef-773d24948524")
-		)
-		(instances
-			(project ""
-				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 135.255 79.375 270)
 		(mirror x)
@@ -6504,7 +6484,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eb963c93-2406-48b0-9674-54aea05ad9ee")
-		(property "Reference" "C1"
+		(property "Reference" "C2"
 			(at 135.255 72.39 90)
 			(effects
 				(font
@@ -6520,7 +6500,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 131.445 78.4098 0)
 			(effects
 				(font
@@ -6547,6 +6527,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 135.255 79.375 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ba2aac95-bc96-4172-a71f-f87d81845542")
 		)
@@ -6556,7 +6545,7 @@
 		(instances
 			(project ""
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "C1")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -6564,15 +6553,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 179.705 56.515 0)
+		(at 169.545 74.295 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "f167705a-5b1e-49dc-bac5-1da5d4bcfd4d")
-		(property "Reference" "R26"
-			(at 177.165 55.2449 0)
+		(property "Reference" "R2"
+			(at 167.005 73.0249 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6581,7 +6570,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 177.165 57.7849 0)
+			(at 167.005 75.5649 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6589,8 +6578,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 177.927 56.515 90)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 167.767 74.295 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6599,7 +6588,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 179.705 56.515 0)
+			(at 169.545 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6608,7 +6597,16 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 179.705 56.515 0)
+			(at 169.545 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 169.545 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6625,15 +6623,102 @@
 		(instances
 			(project ""
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(reference "R26")
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x05")
+		(at 46.99 51.435 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2313b3b-67fa-4857-8646-0e9e59dc5374")
+		(property "Reference" "J1"
+			(at 46.99 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x05"
+			(at 46.99 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.00mm:PinSocket_1x05_P2.00mm_Vertical"
+			(at 46.99 51.435 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 51.435 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 46.99 51.435 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 46.99 51.435 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "83a576bc-4939-4a35-8f83-050d7ca4dfe8")
+		)
+		(pin "3"
+			(uuid "fe3e9ce0-1712-4953-b27f-250e73b85268")
+		)
+		(pin "5"
+			(uuid "e0c3e019-6fa2-4c1d-b633-b70e3b9b26fc")
+		)
+		(pin "1"
+			(uuid "0079bc01-f49f-407f-ad97-bd7f607f0264")
+		)
+		(pin "4"
+			(uuid "f613240b-1984-4823-b274-ba907bc71b27")
+		)
+		(instances
+			(project ""
+				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
+					(reference "J1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(sheet
-		(at 218.44 44.45)
-		(size 26.67 26.035)
+		(at 217.17 26.67)
+		(size 27.94 26.035)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6644,11 +6729,11 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 255 229 191 1.0000)
 		)
 		(uuid "5bb2c093-34f7-4387-ae88-1a6d52253650")
 		(property "Sheetname" "freq_converter"
-			(at 218.44 43.7384 0)
+			(at 217.17 25.9584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6657,7 +6742,7 @@
 			)
 		)
 		(property "Sheetfile" "f_conv.kicad_sch"
-			(at 218.44 71.0696 0)
+			(at 217.17 53.2896 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6674,8 +6759,8 @@
 		)
 	)
 	(sheet
-		(at 79.375 122.555)
-		(size 26.67 26.035)
+		(at 78.105 122.555)
+		(size 27.94 26.035)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6690,7 +6775,7 @@
 		)
 		(uuid "a5ab32e0-e787-467b-9778-05422488ccf7")
 		(property "Sheetname" "POWER+USB"
-			(at 79.375 121.8434 0)
+			(at 78.105 121.8434 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6699,7 +6784,7 @@
 			)
 		)
 		(property "Sheetfile" "POWER.kicad_sch"
-			(at 79.375 149.1746 0)
+			(at 78.105 149.1746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6730,7 +6815,7 @@
 		(instances
 			(project "Tesla_sextant_BT"
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(page "5")
+					(page "3")
 				)
 			)
 		)
@@ -6769,26 +6854,6 @@
 				(justify left top)
 			)
 		)
-		(pin "AUDIO_O+" output
-			(at 245.11 92.71 0)
-			(uuid "b5dd1b77-6e13-4797-b056-c374e76f9421")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "AUDIO_O-" output
-			(at 245.11 95.25 0)
-			(uuid "2bca4734-f5f1-4978-855f-1820965ee39c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "AMP_SD" input
 			(at 217.17 107.95 180)
 			(uuid "b5a099c5-b2e3-4abf-888f-d8cdb8c80b78")
@@ -6800,7 +6865,7 @@
 			)
 		)
 		(pin "AUDIO_SEL" input
-			(at 217.17 111.76 180)
+			(at 217.17 110.49 180)
 			(uuid "2c382b07-fe74-4592-a33a-7b473a664d98")
 			(effects
 				(font
@@ -6829,10 +6894,30 @@
 				(justify left)
 			)
 		)
+		(pin "AUDIO_OUT+" output
+			(at 245.11 97.79 0)
+			(uuid "64d945aa-e7ed-449b-834e-3d33f6158f64")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "AUDIO_OUT-" output
+			(at 245.11 100.33 0)
+			(uuid "b55aa44c-9843-45e5-8831-ba5640e668b0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "Tesla_sextant_BT"
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c"
-					(page "4")
+					(page "2")
 				)
 			)
 		)
