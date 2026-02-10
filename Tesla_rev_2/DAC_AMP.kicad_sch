@@ -6,10 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Tesla sextant BT DAC")
-		(date "2026-02-02")
+		(date "2026-02-10")
 		(rev "2.3")
-		(comment 1 "Caps MLCC 50V dielectric X7R / X5R unless noted otherwise")
-		(comment 2 "Resistors 1% 125mW 150V unless noted otherwise")
 	)
 	(lib_symbols
 		(symbol "Audio:PCM5102A"
@@ -563,148 +561,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x02"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x02"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x02_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1093,7 +949,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:SS13"
+		(symbol "Diode:B220"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1112,7 +968,7 @@
 					)
 				)
 			)
-			(property "Value" "SS13"
+			(property "Value" "B220"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -1120,7 +976,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_SMD:D_SMA"
+			(property "Footprint" "Diode_SMD:D_SMB"
 				(at 0 -4.445 0)
 				(effects
 					(font
@@ -1129,7 +985,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
+			(property "Datasheet" "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1138,7 +994,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "30V 1A Schottky Diode, SMA"
+			(property "Description" "20V 2A Schottky Barrier Rectifier Diode, SMB"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1156,7 +1012,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "D*SMA*"
+			(property "ki_fp_filters" "D*SMB*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1165,7 +1021,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "SS13_0_1"
+			(symbol "B220_0_1"
 				(polyline
 					(pts
 						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
@@ -1203,7 +1059,7 @@
 					)
 				)
 			)
-			(symbol "SS13_1_1"
+			(symbol "B220_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -2739,6 +2595,12 @@
 		(uuid "5a0e2251-4a3c-45d6-9613-88a527b396d4")
 	)
 	(junction
+		(at 78.74 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79646415-0a9e-45b4-9d04-9ee1b633876b")
+	)
+	(junction
 		(at 75.565 38.735)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2757,22 +2619,10 @@
 		(uuid "a00723ac-b089-410e-b3ad-93df9bca363b")
 	)
 	(junction
-		(at 78.74 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a67f6d03-099e-454c-8d6d-3d9696d5b07f")
-	)
-	(junction
 		(at 75.565 26.035)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ab711cf8-8ccd-4f11-ba9c-5bc1ced377a1")
-	)
-	(junction
-		(at 95.885 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c72899b2-f5f5-410b-a127-8722b37f3b27")
 	)
 	(junction
 		(at 219.075 120.65)
@@ -3077,13 +2927,13 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 119.38) (xy 102.87 116.84)
+			(xy 171.45 60.96) (xy 180.975 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3e93157c-f048-441a-bb1d-44fa7c32e27a")
+		(uuid "3db112e4-fea6-426a-9221-502674c840f9")
 	)
 	(wire
 		(pts
@@ -3307,7 +3157,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 134.62) (xy 95.885 134.62)
+			(xy 78.74 134.62) (xy 120.015 134.62)
 		)
 		(stroke
 			(width 0)
@@ -3657,16 +3507,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.885 134.62) (xy 120.015 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9ea7a2b-8fbc-4305-9826-a65691c32271")
-	)
-	(wire
-		(pts
 			(xy 88.9 177.165) (xy 99.695 177.165)
 		)
 		(stroke
@@ -3704,16 +3544,6 @@
 			(type default)
 		)
 		(uuid "c4fca660-6e21-41ea-8eab-b1dff96cc129")
-	)
-	(wire
-		(pts
-			(xy 95.885 134.62) (xy 95.885 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c77c748a-3637-49ff-bcb2-6d22f81eb88f")
 	)
 	(wire
 		(pts
@@ -3764,16 +3594,6 @@
 			(type default)
 		)
 		(uuid "d00d3d7b-75a6-4e40-88fd-9c7bac81fff2")
-	)
-	(wire
-		(pts
-			(xy 95.885 114.3) (xy 102.87 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d014d96c-4ec1-4c7b-8726-956fc3f46387")
 	)
 	(wire
 		(pts
@@ -4005,6 +3825,26 @@
 		)
 		(uuid "184f79c4-699f-4b44-9876-a8b2ef967811")
 	)
+	(label "DIV_2.5V"
+		(at 78.74 177.165 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "19af621f-4928-4f8f-8024-aca40e78e5a4")
+	)
+	(label "BUFF_FB"
+		(at 61.595 147.32 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "1d423e15-b7a3-42e9-9674-0501b84be55b")
+	)
 	(label "AUD_DAC_MIX"
 		(at 160.02 47.625 180)
 		(effects
@@ -4085,7 +3925,7 @@
 		)
 		(uuid "912919ee-295b-4a50-b75c-5dc3f204d236")
 	)
-	(label "AUD_LPF"
+	(label "AUD_LPF_L"
 		(at 123.825 46.355 180)
 		(effects
 			(font
@@ -4095,7 +3935,7 @@
 		)
 		(uuid "93452bce-78fd-4252-8a86-fcdec7426d04")
 	)
-	(label "AUD_LPF"
+	(label "AUD_LPF_R"
 		(at 123.825 48.895 180)
 		(effects
 			(font
@@ -4165,7 +4005,7 @@
 		)
 		(uuid "e909cc71-5add-4865-83a3-7487269d77ea")
 	)
-	(hierarchical_label "AUDIO_SEL"
+	(hierarchical_label "INPUT_SEL"
 		(shape input)
 		(at 251.46 128.27 180)
 		(effects
@@ -4372,76 +4212,6 @@
 			(project "Tesla_sextant_BT"
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c/f0da1f80-f137-4b99-a8bf-d6d1bfec4fb0"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 107.95 114.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0c52424b-5411-41a6-b307-e9f8fc53f6ea")
-		(property "Reference" "J5"
-			(at 110.49 114.2999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 110.49 116.8399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Tesla_Library:Conn_Solder_1x02_SMD"
-			(at 107.95 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 107.95 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 107.95 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b78cc3d5-7a47-44d8-adf9-c83d7d169a3f")
-		)
-		(pin "1"
-			(uuid "07496942-93d5-4edc-8e94-0e2f769c1707")
-		)
-		(instances
-			(project ""
-				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c/f0da1f80-f137-4b99-a8bf-d6d1bfec4fb0"
-					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -4671,6 +4441,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 171.45 64.77 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "1856a4d0-f5b3-4db8-9dda-62eaf227addd")
+		(property "Reference" "C41"
+			(at 167.64 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TBD"
+			(at 167.64 66.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 170.4848 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 171.45 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 171.45 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 171.45 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 171.45 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2eccc5c2-12ae-4f3a-8126-ed5d194a463e")
+		)
+		(pin "2"
+			(uuid "925f46b5-c691-4f03-8f21-bdd46e50275e")
+		)
+		(instances
+			(project "Tesla_sextant_BT"
+				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c/f0da1f80-f137-4b99-a8bf-d6d1bfec4fb0"
+					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 137.795 46.355 90)
 		(unit 1)
@@ -4882,7 +4739,7 @@
 	)
 	(symbol
 		(lib_id "Tesla_sextant_BT_Library:OPA2342")
-		(at 69.85 134.62 0)
+		(at 106.045 179.705 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4891,7 +4748,7 @@
 		(fields_autoplaced yes)
 		(uuid "2b76122a-4274-419f-aa6d-220c0eb78105")
 		(property "Reference" "U3"
-			(at 71.12 125.095 0)
+			(at 107.315 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4899,7 +4756,7 @@
 			)
 		)
 		(property "Value" "OPA2342"
-			(at 71.12 127.635 0)
+			(at 107.315 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4907,7 +4764,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 69.85 134.62 0)
+			(at 106.045 179.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4916,7 +4773,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/gpn/opa2342"
-			(at 69.85 134.62 0)
+			(at 106.045 179.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4925,7 +4782,7 @@
 			)
 		)
 		(property "Description" "Dual OP AMP, 5.5-V, 1-MHz, low bias current"
-			(at 69.85 134.62 0)
+			(at 106.045 179.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4934,7 +4791,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 69.85 134.62 0)
+			(at 106.045 179.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5366,6 +5223,71 @@
 			(project "Tesla_sextant_BT"
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c/f0da1f80-f137-4b99-a8bf-d6d1bfec4fb0"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 171.45 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "394bf5df-4785-4c8c-83fa-99a019fc2338")
+		(property "Reference" "#PWR095"
+			(at 171.45 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 171.45 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 171.45 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8f1bd9b1-cdc2-4cae-9de3-4b44394973c2")
+		)
+		(instances
+			(project "Tesla_sextant_BT"
+				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c/f0da1f80-f137-4b99-a8bf-d6d1bfec4fb0"
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
@@ -6933,7 +6855,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 89.2302 76.835 0)
 			(effects
 				(font
@@ -7320,7 +7242,7 @@
 	)
 	(symbol
 		(lib_id "Tesla_sextant_BT_Library:OPA2342")
-		(at 106.045 179.705 0)
+		(at 69.85 134.62 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7329,7 +7251,7 @@
 		(fields_autoplaced yes)
 		(uuid "871a1899-1b84-40a3-8fff-643a517b63b4")
 		(property "Reference" "U3"
-			(at 107.315 170.18 0)
+			(at 71.12 125.095 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7337,7 +7259,7 @@
 			)
 		)
 		(property "Value" "OPA2342"
-			(at 107.315 172.72 0)
+			(at 71.12 127.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7345,7 +7267,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 106.045 179.705 0)
+			(at 69.85 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7354,7 +7276,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/gpn/opa2342"
-			(at 106.045 179.705 0)
+			(at 69.85 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7363,7 +7285,7 @@
 			)
 		)
 		(property "Description" "Dual OP AMP, 5.5-V, 1-MHz, low bias current"
-			(at 106.045 179.705 0)
+			(at 69.85 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7372,7 +7294,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 106.045 179.705 0)
+			(at 69.85 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7773,7 +7695,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 210.4898 128.27 0)
 			(effects
 				(font
@@ -8214,7 +8136,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 196.5198 67.945 0)
 			(effects
 				(font
@@ -8490,72 +8412,6 @@
 			(project ""
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c/f0da1f80-f137-4b99-a8bf-d6d1bfec4fb0"
 					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 102.87 119.38 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b9d10448-9443-4b7c-b2e0-b779018f9bf5")
-		(property "Reference" "#PWR097"
-			(at 102.87 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 102.87 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 102.87 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 102.87 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "834f0d8c-89c2-42dc-8e7b-cd7a993ef3a7")
-		)
-		(instances
-			(project "Tesla_sextant_BT"
-				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c/f0da1f80-f137-4b99-a8bf-d6d1bfec4fb0"
-					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -9139,74 +8995,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:SS13")
-		(at 211.455 74.295 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f170d479-56bd-42da-8966-3ac9a62c9773")
-		(property "Reference" "D3"
-			(at 211.1375 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SS13"
-			(at 211.1375 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
-			(at 211.455 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf"
-			(at 211.455 74.295 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "30V 1A Schottky Diode, SMA"
-			(at 211.455 74.295 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f8ae7c40-84d7-4f56-b47e-709f43705ff1")
-		)
-		(pin "2"
-			(uuid "fe046c15-ea87-44a9-a41b-3c0bf023889b")
-		)
-		(instances
-			(project ""
-				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c/f0da1f80-f137-4b99-a8bf-d6d1bfec4fb0"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 56.515 33.655 0)
 		(mirror y)
@@ -9333,6 +9121,74 @@
 			(project "Tesla_sextant_BT"
 				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c/f0da1f80-f137-4b99-a8bf-d6d1bfec4fb0"
 					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:B220")
+		(at 211.455 74.295 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc2b5e1a-801d-4c33-a233-170d71eaa7b3")
+		(property "Reference" "D3"
+			(at 211.1375 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B220"
+			(at 211.1375 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMB"
+			(at 211.455 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf"
+			(at 211.455 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V 2A Schottky Barrier Rectifier Diode, SMB"
+			(at 211.455 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "57a66e7e-7fc8-4d18-a2c8-d82716fd68ab")
+		)
+		(pin "2"
+			(uuid "bdc1da31-9619-4f55-8d46-291d1a73bdef")
+		)
+		(instances
+			(project "Tesla_sextant_BT"
+				(path "/8e7bde30-d14b-44a7-a566-3173755ec64c/f0da1f80-f137-4b99-a8bf-d6d1bfec4fb0"
+					(reference "D3")
 					(unit 1)
 				)
 			)
