@@ -646,7 +646,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "../Fab_gerbers/",
+      "plot": "../Fab_gerbers/TESLA_BT/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
